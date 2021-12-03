@@ -42,7 +42,7 @@ pub struct MintNewEditionFromMasterEditionViaTokenArgs {
 }
 
 /// Instructions supported by the Metadata program.
-#[derive(BorshSerialize, BorshDeserialize, Clone)]
+#[derive(BorshSerialize, BorshDeserialize, Debug, Clone)]
 pub enum MetadataInstruction {
     /// Create Metadata object.
     ///   0. `[writable]`  Metadata key (pda of ['metadata', program id, mint id])
